@@ -54,6 +54,17 @@ td#DisplayBox {background-color: lightgreen; text-align: left;
 	margin-right: 50px;
 }
 
+td#QuestionNow {background-color: #e5f2cb; text-align: left;
+	margin-right: 50px;
+	padding-right: 50px;
+	width: 10%;
+}
+
+td#QuestionLast {background-color: #deffc3; text-align: left;
+	padding-right: 30px;
+	width: 10%;
+}
+
 table#WordsListing { text-align: center;
 	margin: 0px;
 	border-width: 0px;
@@ -112,6 +123,8 @@ a {color: blue; text-decoration: none; font-weight: bold; background-color: tran
 p#Error {color: red; text-decoration: none; font-weight: bold; background-color: transparent;}
 
 font#Error {color: red; text-decoration: none; font-weight: bold; background-color: transparent;}
+
+font#Soft {color: #bcbcbc; text-decoration: none; font-weight: inherit; background-color: transparent;}
 
 font#Highlight {
 	background: #f8ef40;

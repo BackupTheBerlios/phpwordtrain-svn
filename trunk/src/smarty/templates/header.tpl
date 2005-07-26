@@ -20,7 +20,7 @@
             [Study]</a>
       </td>
       <td width="20%" align="center">
-        <a href="{$site}dictionary/index.php" 
+        <a href="{$site}dictionary/index.php?page=1&sort=word&way=asc" 
             id={if $section!="Dictionary"}"MenuHover"{else}"Normal"{/if}> 
             [Dictionary]</a>
       </td>      

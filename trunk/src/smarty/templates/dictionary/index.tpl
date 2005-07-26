@@ -7,9 +7,10 @@
 {include file="header.tpl"}
 
 {* Search forms *}
-<form name="search">
+
 <table width="70%"  border="0" align="center" cellpadding="5">
   <tr>
+    <form name="search1">
     {if $internet == 'yes' }
         <td>Search on Internet</td>
     {else}
@@ -29,11 +30,15 @@
     </select></td>
      <td><INPUT TYPE="button" VALUE="Search" {if $internet == 'no' }DISABLED{/if}
        ONCLICK="self.location =
-            document.forms['search'].select1.value+
-            document.forms['search'].textfield1.value" />
+            document.forms['search1'].select1.value+
+            document.forms['search1'].textfield1.value" />
             
-         </td>  </tr>
+         </td> 
+      </form>
+  </tr>
   <tr>
+    <form name="search2">
+
     <td>Search localy </td>
     <td><INPUT TYPE="text" NAME="textfield2" /></td>
     <td><select name="select2">
@@ -42,9 +47,9 @@
     </select></td>
      <td><INPUT TYPE="button" VALUE="Search" 
        ONCLICK="self.location = 'search.php?'+
-            document.forms['search'].select2.value+
+            document.forms['search2'].select2.value+
             '='+
-            document.forms['search'].textfield2.value">
+            document.forms['search2'].textfield2.value">
        </td>
 
   </tr>
@@ -55,7 +60,7 @@
 
 <br/><P ALIGN="center">
 {if $p_last > 0}
-    <A HREF="index.php?page={$p_last}&total={$no_pages}&sort={$sorting}">&lt;</A>
+    <A HREF="index.php?page={$p_last}&total={$no_pages}&sort={$sorting}&way={$smarty.get.way}">&lt;</A>
 {else}
     &lt;
 {/if}
@@ -63,11 +68,11 @@
     {if $item == $p_current}
         <font id="Highlight">{$item}</font>
     {else}
-        <A HREF="index.php?page={$item}&total={$no_pages}&sort={$sorting}">{$item}</A>
+        <A HREF="index.php?page={$item}&total={$no_pages}&sort={$sorting}&way={$smarty.get.way}">{$item}</A>
     {/if}
 {/foreach}
 {if $p_next <= $no_pages}
-    <A HREF="index.php?page={$p_next}&total={$no_pages}&sort={$sorting}">&gt;</A>
+    <A HREF="index.php?page={$p_next}&total={$no_pages}&sort={$sorting}&way={$smarty.get.way}">&gt;</A>
 {else}
     &gt;
 {/if}
