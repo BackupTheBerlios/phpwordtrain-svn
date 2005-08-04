@@ -38,7 +38,6 @@
     <td>{$item}</td>
   {/foreach}
 </tr>
-
 {/foreach}
 
 </table></p>
