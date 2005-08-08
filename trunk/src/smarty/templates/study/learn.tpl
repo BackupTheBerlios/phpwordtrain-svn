@@ -1,6 +1,7 @@
 {include file="header.tpl"}
-<p>Questions to go: {$counter+1}<br/>
 
+{if $msg}<p>{$msg}</p>{/if}
+<p>Questions to go: {$counter+1}<br/>
 {if $today_asked}
     Questions resolved today: {$today} of {$today_asked}</p>
 {/if}
