@@ -1,3 +1,5 @@
+{assign var="focus" value="question.answer"}
+
 {include file="header.tpl"}
 
 {if $msg}<p>{$msg}</p>{/if}
@@ -15,7 +17,7 @@
     {/if}
     
     <br>
-    <table border='1' cellspacing='10' width='50%'>
+    <table id='Question'>
     <tr>
         <td id="QuestionLast">Translation</td>
         <td>{$last_trans}</td>
@@ -36,24 +38,26 @@
     </tr></table></p><br><br>
 {/if}            
 
+<form name='question' action='learn.php' method='post'>
 {if $asking == true}
-    <form action='learn.php' method='post'>
-    <p align='center'><table border='1' cellspacing='10'>
+    <p align='center'><table id='Question'>
         <tr>
             <td id="QuestionNow">Translation</td>
             <td>{$translation}</td>
         </tr><tr>
             <td id="QuestionNow">Word</td>
-            <td><input type='text' name='answer'></td>
+            <td><input type='text' name='answer' size='30' ></td>
         </tr><tr>
             <td id="QuestionNow">Tip</td>
-            <td>{$tip_word}</td>
+            <td>{$tip_word}&nbsp;</td>
         </tr>
         </table></p>
     <p align='center'>
         <input type="hidden" name='counter' value='{$counter}'>
         <input type='submit' name='action' value='Check'>
-    </p></form>
+    </p>
+{else}
+  <input type='hidden' name='answer' size='30' >
 {/if}
-
+</form>
 {include file="footer.tpl"}

@@ -57,12 +57,17 @@ td#DisplayBox {background-color: lightgreen; text-align: left;
 td#QuestionNow {background-color: #e5f2cb; text-align: left;
 	margin-right: 50px;
 	padding-right: 50px;
-	width: 10%;
+	width: 20%;
 }
 
 td#QuestionLast {background-color: #deffc3; text-align: left;
 	padding-right: 30px;
-	width: 10%;
+	width: 20%;
+}
+
+td#Normal_First {background-color: #deffc3; text-align: left;
+	padding-right: 30px;
+	width: 20%;
 }
 
 table#WordsListing { text-align: center;
@@ -73,6 +78,24 @@ table#WordsListing { text-align: center;
 	padding: 0px;
 }
 
+table#Question { text-align: left;
+	margin: 0;
+	position: inherit;
+	padding: 0;
+	border: solid #656565 3px;
+	font-variant: normal;
+	width: 60%;
+}
+
+table#Normal { text-align: left;
+	margin: 0;
+	position: inherit;
+	padding: 0;
+	border: solid #656565 3px;
+	font-variant: normal;
+	width: 60%;
+}
+
 table#DisplayBox {
 	position: inherit;
 	padding: 10px;
@@ -81,6 +104,26 @@ table#DisplayBox {
 }
 	
 tr#Options { text-align: center;
+	margin: 0px;
+	border-style: solid;
+	border-width: 0px;
+	width: 90%;
+	padding-right: 10px;
+	padding-left: 10px;
+	position: inherit;
+	border-collapse: inherit;
+	background: #FFCE00;
+}
+
+tr#Normal_Buttons { text-align: center;
+	border-style: solid;
+	border-width: 0px;
+	border-collapse: inherit;
+	height: inherit;
+	width: inherit;
+}
+
+tr#Normal_Header { text-align: center;
 	margin: 0px;
 	border-style: solid;
 	border-width: 0px;

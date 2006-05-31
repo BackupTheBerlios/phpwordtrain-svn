@@ -9,7 +9,7 @@
 <br><br><TABLE BORDER="0" CELLSPACING="3" ALIGN="left">
 <tr>
     <TD WIDTH="100"><B>Version </B></td>
-    <td>0.1</td>
+    <td>0.2</td>
 </tr>
 <tr>
     <td><B>Author </B></td>

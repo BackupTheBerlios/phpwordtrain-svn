@@ -1,8 +1,25 @@
 <html>
+<head>
     <title>phpWordTrain</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="{$site}style.css">
-<body id="body">
+   
+   {if $focus}
+      {literal}
+        <SCRIPT language='javascript'>
+        <!--
+          function setfocus() {
+               document.{/literal}{$focus}{literal}.focus();
+               return;
+            }
+          
+        //-->
+        </SCRIPT>
+      {/literal}      
+   {/if}
+
+</head>
+<body id="body" {if $focus}onLoad="setfocus()"{/if}>
 <table width="100%" border="0" align="center">
 <tr>  
 <td id="MenuBar" height="41">
@@ -35,6 +52,7 @@
 </tr>
 <tr>
 <td>
+
   <TABLE BORDER="0" CELLSPACING="20" ALIGN="left" WIDTH="100%">
   <tr><td>
     

@@ -40,16 +40,16 @@
     <form name="search2">
 
     <td>Search localy </td>
-    <td><INPUT TYPE="text" NAME="textfield2" /></td>
-    <td><select name="select2">
+    <td><INPUT TYPE="text" NAME="localsearch" /></td>
+    <td><select name="direction">
       <OPTION VALUE="word">Translate to English</option>
       <OPTION VALUE="trans">Translate to German</option>
     </select></td>
      <td><INPUT TYPE="button" VALUE="Search" 
        ONCLICK="self.location = 'search.php?'+
-            document.forms['search2'].select2.value+
+            document.forms['search2'].direction.value+
             '='+
-            document.forms['search2'].textfield2.value">
+            document.forms['search2'].localsearch.value">
        </td>
 
   </tr>
