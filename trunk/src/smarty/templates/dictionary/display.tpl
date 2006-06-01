@@ -10,17 +10,8 @@
     <td>{$translation}</td>
 </tr>
 <tr>
-    <td id="DisplayBox">Type</td>
-    <td>{$type}</td>
-    </td>
-</tr>
-<tr>
-    <td id="DisplayBox">Tip to word</td>
+    <td id="DisplayBox">Tip to solve word</td>
     <td>{$tip_word}</td>
-</tr>
-<tr>
-    <td id="DisplayBox">Tip to translation</td>
-    <td>{$tip_trans}</td>
 </tr>
 <tr>
     <td id="DisplayBox">Date input</td>
