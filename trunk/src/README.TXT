@@ -23,11 +23,14 @@ if you loose data, don't heasitate and fill up a bug report.
 --------------------
 
 This program should run in any computer with PHP and MySQL servers instaled.
-Once you do, you must configure "config.inc" with your data. 
+Once you do, you must configure "config.inc" with your data.
 
-The initial database is placed on "lib/base.sql". Build a new database and
-import the contents of that file.
+If you point your browser to the main page with no configuration file, an installar wizard will show up to check on your information and will build a new configuration file for you. At the end, check on your "tmp/" directory.
 
-After updating the configuration file and making sure your TMP dir is world
-writable, you should be able to start using the application.
+Altought the wizard won't tell you, you must make next directories world writeble:
+
+	tmp/
+	smarty/templates_c
+
+After the wizard is done, you have an empty initial database. Until I improve phpWordTrain you must log on your database and run the SQL sentences on "lib/base.sql". That's the dictionary table.
 

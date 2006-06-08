@@ -34,10 +34,10 @@
 //  $Id$
 //  ------------------------------------------------------------------------ //
 
+
 if ( ! file_exists("config.inc") )
 {
-   $smarty= Root_Template();
-   $smarty->display('config/step1.tpl');
+   header("Location: config.php");
    die;
 } 
 

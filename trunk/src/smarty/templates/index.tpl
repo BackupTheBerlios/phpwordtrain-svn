@@ -16,9 +16,9 @@
     <td>Francisco Garc&iacute;a Rodr&iacute;guez  
         <SCRIPT language='javascript'>
         <!--
-          var contact = "kalahan&#64users&#46berlios&#46com"
+          var contact = "kalahan&#64users&#46berlios&#46de"
           var mail = "kalahan"
-          var emailHost = "users" + "&#46" + "berlios" + "&#46" + "com"
+          var emailHost = "users" + "&#46" + "berlios" + "&#46" + "de"
           
           document.write("&lt;<a href=mailto:"+mail+"@"+emailHost+">" + contact + "</a>&gt;");
         //-->
@@ -34,9 +34,9 @@
 
 <script language=javascript>
 <!--
-  var contact = "frankalahan&#64gmail.com"
+  var contact = "kalahan&#64users.berlios.de"
   var mail = "kalahan"
-  var emailHost = "users" + "&#46" + "berlios" + "&#46" + "com"
+  var emailHost = "users" + "&#46" + "berlios" + "&#46" + "de"
 
   document.write("<a href=" + "mail" + "to:" + mail + "&#64" + emailHost+ ">" 
 + contact + "</a>" + ".")

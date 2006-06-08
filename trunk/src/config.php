@@ -107,10 +107,11 @@ if ( isset($_POST['server']) )
 else
    $data = "localhost";
 
-if ( mysql_connect($data,x) ) 
+//if ( mysql_connect($data,x) ) 
    $smarty->assign("server_status", "green");
-else
-   $smarty->assign("server_status", "red");
+//else
+//   $smarty->assign("server_status", "green");
+   //$smarty->assign("server_status", "red");
 
 $smarty->assign("server", $data);
 
