@@ -45,7 +45,7 @@ $smarty->assign("section", "Admin");
 
 // If there are POST data, we must insert them and get status message
 if ( isset($_POST['word']) ) 
-    $smarty->assign('msg', InsertWord($_POST) );
+    $smarty->assign('msg', stripslashes(InsertWord($_POST)) );
 
 // Now show empty FORM for new word
 $smarty->assign('last_type',$_POST['type']);

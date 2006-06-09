@@ -40,7 +40,8 @@
     <TABLE BORDER="0" ALIGN="center">
     <tr>
         <td><INPUT TYPE="button" VALUE="Edit" 
-            ONCLICK="self.location = '../admin/edit.php?editingword={$smarty.get.word}'"></td>
+            ONCLICK="self.location = '../admin/edit.php?editingword={$link_word}'">
+          </td>
     </tr>
     </table>
     </td>
